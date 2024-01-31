@@ -1,23 +1,28 @@
 #!/bin/bash
-# 3.      Create a bash script called "script.sh" that will create 2 folders called fol_1, fol_2. (Don't forget your shebang at the top of the script.sh)
-mkdir fol_1 fol_2
-# 4.      Update your script to create the following files in fol_1: 1_1.txt, 1_2.txt, 1_3.txt
-touch fol_1/1_1.txt fol_1/1_2.txt fol_1/1_3.txt
-# 5.      Update your script to create the following files in fol_2: 2_1.txt, 2_2.txt, 2_3.txt
-touch fol_2/2_1.txt fol_2/2_2.txt fol_2/2_3.txt
-# 6.      Create a .gitignore file to ignore fol_1, fol_2
-touch .gitignore && echo fol_1/ >> .gitignore && echo fol_2/ >> .gitignore
-# 7.      Create a new git project on GitHub and commit and push your files to GitHub from your terminal
-git init
-git add *
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/lmartins18/devops_week2_lab.git
-git push -u origin main
-# 8.      Update your bash script to delete fol_1, fol_2, fol_2 when it starts
+# 8.  Update your bash script to delete fol_1, fol_2, fol_2 when it starts
 rm -r fol_1/ fol_2/
-# 9.      Commit the newly updated bash script and push your new script to GitHub
-git add * && git commit -m "updated bash script: "
+#1.  Make a folder to contain this week's lab called "devops-lab-2-task"
+mkdir devops-lab-2-task
+# 2.  Use the cd command to navigate to this folder in your terminal (subsequent steps should be completed in this folder)
+cd devops-lab-2-task
+# 3.  Create a bash script called "script.sh" that will create 2 folders called fol_1, fol_2. (Don't forget your shebang at the top of the script.sh)
+mkdir fol_1 fol_2
+# 4.  Update your script to create the following files in fol_1: 1_1.txt, 1_2.txt, 1_3.txt
+touch fol_1/1_1.txt fol_1/1_2.txt fol_1/1_3.txt
+# 5.  Update your script to create the following files in fol_2: 2_1.txt, 2_2.txt, 2_3.txt
+touch fol_2/2_1.txt fol_2/2_2.txt fol_2/2_3.txt
+# 6.  Create a .gitignore file to ignore fol_1, fol_2
+touch .gitignore && echo fol_1/ >> .gitignore && echo fol_2/ >> .gitignore
+# 7.  Create a new git project on GitHub and commit and push your files to GitHub from your terminal
+# The following is commented because it shouldn't be part of the script, but added to demonstrate completion.
+# git init
+# git add *
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/lmartins18/devops_week2_lab.git
+# git push -u origin main
+# 9.  Commit the newly updated bash script and push your new script to GitHub
+git add script.sh && git commit -m "updated bash script: " && git push
 # 10.  Update the job so all the files ending with _1.txt and _3.txt have only read and write permissions by the you (being the user who created the file) in each of the folders
 chmod 600 fol_1/*_1.txt fol_1/*_3.txt fol_2/*_1.txt fol_2/*_3.txt
 # 11.  Update the job so all the files ending with _2.txt have read, write, and executed permissions by any user on your computer (being the user who created the file) in each of the folders
