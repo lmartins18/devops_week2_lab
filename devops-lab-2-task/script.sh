@@ -41,6 +41,6 @@ git add README.md && git commit -m "new README.md" && git push
 # 17.  Update the job to show a message in the terminal saying "Job completed" when the job has finished running
 echo "Job completed"
 # 18.  Commit the newly updated bash script and push your new script to GitHub
-git add script.sh && git commit -m "updated script.sh" && git push
+git add script.sh && git commit -m "18. updated script.sh" && git push
 # 19.  Now roll the git repository back to step 18 and update the repository on github.
-git reset --hard HEAD^ && git push
+git reset --hard HEAD^ && git push 
