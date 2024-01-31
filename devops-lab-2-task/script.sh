@@ -28,14 +28,14 @@ chmod 600 fol_1/*_1.txt fol_1/*_3.txt fol_2/*_1.txt fol_2/*_3.txt
 # 11.  Update the job so all the files ending with _2.txt have read, write, and executed permissions by any user on your computer (being the user who created the file) in each of the folders
 chmod 777 fol_1/*_2.txt fol_2/*_2.txt
 # 12.  Create a file called README.md root directory of the GitHub repository and add a heading to the README.md by adding the following it # Week 2 Lab – Bash & Git
-echo "# Week 2 Lab – Bash & Git" >> README.md
+echo "# Week 2 Lab – Bash & Git" >> ../README.md
 # 13.  On a new line add your name and student number to the README.MD file
-echo "Luis Martins - x231" >> README.md
+echo "Luis Martins - x23194456" >> ../README.md
 # 14.  Add a link to your GitHub repository using: [title](https://www.example.com) (replace title with a title for the link and https://www.example.com with the link to your GitHub repository.
-echo "[Luis's Github Repository](https://github.com/lmartins18/devops_week2_lab)" >> README.md
+echo "[Luis's Github Repository](https://github.com/lmartins18/devops_week2_lab)" >> ../README.md
 # 15.  Add two new lines one with --- and the other with: To run the script.sh run: `bash script.sh`
-echo "---" >> README.md
-echo "To run the script.sh run: \`bash script.sh\`" >> README.md
+echo "---" >> ../README.md
+echo "To run the script.sh run: \`bash script.sh\`" >> ../README.md
 # 16.  Commit the readme file and push your readme.md file to GitHub
 git add README.md && git commit -m "new README.md" && git push
 # 17.  Update the job to show a message in the terminal saying "Job completed" when the job has finished running
