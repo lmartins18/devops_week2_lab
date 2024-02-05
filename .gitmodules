@@ -1,0 +1,3 @@
+[submodule "devops/week2"]
+	path = devops/week2
+	url = https://github.com/lmartins18/devops_week2_lab
